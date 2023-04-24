@@ -1,0 +1,23 @@
+{
+  "name": "nablaflow-api-client-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "NablaFlow <engineering@nablaflow.io>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-request": "~5.1.0",
+    "openid-client": "^5.4.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "3.3.0",
+    "@graphql-codegen/introspection": "3.0.1",
+    "@graphql-codegen/typescript": "3.0.3",
+    "@graphql-codegen/typescript-graphql-request": "^4.5.9",
+    "@graphql-codegen/typescript-operations": "^3.0.3",
+    "esbuild": "^0.17.17"
+  },
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.ts"
+  }
+}

@@ -1,0 +1,62 @@
+query findArchiwindV1SimulationById ($id: ID!, $token: String, $password: String) {
+  archiwindV1Simulation(id: $id, token: $token, password: $password) {
+    id
+    name
+    status
+    sharingStatus {
+      public
+      token
+      password
+    }
+    quality
+    inputs {
+      model {
+        building { filename url }
+        surroundings { filename url }
+        terrain { filename url }
+        vegetation { filename url }
+      }
+      coordinates { latitude longitude }
+      windDirections
+      radius
+    }
+    results {
+      attachments {
+        pdfReportUrl
+        summary {
+          markdownText
+          updatedAt
+        }
+      }
+      model {
+        building { glbUrl }
+        surroundings { glbUrl }
+        terrain { glbUrl }
+        vegetation { glbUrl }
+      }
+      pedestrianComfort {
+        altitude
+        ranges { name interval { from to }}
+        colormap { min max colors { rangeName color } }
+        seasons {
+          summer   { degrees frequencies { interval { from to } amount } }
+          winter   { degrees frequencies { interval { from to } amount } }
+          allYear { degrees frequencies { interval { from to } amount } }
+        }
+      }
+      windVelocities {
+        altitude
+        colormap {
+          min
+          max
+          colors
+        }
+        directions {
+          degrees
+          topDownRenderingUrl
+        }
+      }
+    }
+    createdAt
+  }
+}
