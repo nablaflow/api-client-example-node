@@ -4,9 +4,10 @@ esbuild
   .build({
     entryPoints: [
       'examples/get_archiwind_v1_simulation.ts',
+      'examples/submit_archiwind_v1_simulation.ts',
     ],
     outdir: 'dist',
-    format: 'esm',
+    format: 'cjs',
     bundle: true,
     platform: 'node',
     target: ['node18'],

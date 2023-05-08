@@ -3,7 +3,10 @@ import type { CodegenConfig } from '@graphql-codegen/cli';
 const config: CodegenConfig = {
   overwrite: true,
   schema: "https://api.nablaflow.io/schema.graphql",
-  documents: ["src/nablaflow/queries/*.graphql"],
+  documents: [
+    "src/nablaflow/queries/*.graphql",
+    "src/nablaflow/mutations/*.graphql",
+  ],
   generates: {
     "src/nablaflow/api.ts": {
       plugins: [

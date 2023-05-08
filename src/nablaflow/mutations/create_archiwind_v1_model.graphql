@@ -1,0 +1,10 @@
+mutation createArchiwindV1Model($input: ArchiwindV1ModelInput!) {
+  createArchiwindV1Model(input: $input) {
+    id
+    name
+    building { strategy uploadUrl }
+    surroundings { strategy uploadUrl }
+    terrain { strategy uploadUrl }
+    vegetation { strategy uploadUrl }
+  }
+}

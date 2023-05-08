@@ -1,0 +1,21 @@
+mutation createArchiwindV1Simulation($input: ArchiwindV1SimulationInput!) {
+  createArchiwindV1Simulation(input: $input) {
+    name
+    quality
+    status
+    inputs {
+      coordinates {
+        latitude
+        longitude
+      }
+      model {
+        building { filename url }
+        surroundings { filename url }
+        terrain { filename url }
+        vegetation { filename url }
+      }
+      radius
+      windDirections
+    }
+  }
+}
