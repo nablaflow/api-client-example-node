@@ -1,4 +1,4 @@
-# NablaFlow API JS example client
+# NablaFlow API JS example client [![build](https://github.com/nablaflow/api-client-example-node/actions/workflows/build.yml/badge.svg)](https://github.com/nablaflow/api-client-example-node/actions/workflows/build.yml)
 
 ## Description
 
@@ -17,7 +17,7 @@ _It's not possible to create a client and submit it for approval yet, so if you 
 - A valid account at [https://account.nablaflow.io](https://account.nablaflow.io)
 - [direnv](https://direnv.net/docs/installation.html)
 - [oauth2c](https://github.com/cloudentity/oauth2c)
-- [nodejs 18](https://nodejs.org/en)
+- [nodejs 18 or 20](https://nodejs.org/en)
 - [yarn](https://yarnpkg.com/)
 
 ## Test run
