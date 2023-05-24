@@ -4,6 +4,8 @@
 
 NablaFlow's API talks [GraphQL](https://graphql.org/).
 
+Please consult the [documentation](https://docs.nablaflow.io/developers/api/overview).
+
 ## Authentication
 
 Third-party clients can access the API on behalf of existing NablaFlow users. In short, a user must first register with us and then connect their account inside your application via [a typical OAuth2 authorization code flow](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/).
@@ -27,8 +29,8 @@ _It's not possible to create a client and submit it for approval yet, so if you 
 - Copy the access token from oauth2c into `.env`, as `ACCESS_TOKEN=...`.
 - `yarn install`
 - `yarn run codegen`
-- Edit `examples/get_archiwind_v1_simulation.ts` and fill in simulation id and token
+- Edit `examples/archiwind/get_simulation_v1.ts` and fill in simulation id and token
 - `node esbuild.js`
-- `node dist/get_archiwind_v1_simulation.js`
+- `node dist/archiwind/get_simulation_v1.js`
 
 There are many examples in the [`examples`](examples/) folder.
