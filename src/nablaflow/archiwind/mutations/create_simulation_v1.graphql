@@ -1,5 +1,5 @@
-mutation createArchiwindV1Simulation($input: ArchiwindV1SimulationInput!) {
-  createArchiwindV1Simulation(input: $input) {
+mutation createSimulationV1($input: SimulationInputV1!) {
+  createSimulationV1(input: $input) {
     name
     quality
     status

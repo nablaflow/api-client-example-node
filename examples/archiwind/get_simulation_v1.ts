@@ -1,16 +1,16 @@
-import { getClient } from '../src/nablaflow/client';
+import { getClient } from '../../src/nablaflow/archiwind/client';
 
 async function main() {
   const sdk = getClient();
 
   // NOTE: Enter your simulation id and token below. 
   // Token is only required to access other users' public simulations.
-  const { archiwindV1Simulation } = await sdk.findArchiwindV1SimulationById({
+  const { simulationV1 } = await sdk.findSimulationV1ById({
     id: "simulation_id",
-    token: "token"
+    token: "token",
   });
 
-  console.log(archiwindV1Simulation);
+  console.log(simulationV1);
 }
 
 main();

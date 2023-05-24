@@ -1,5 +1,5 @@
-mutation createArchiwindV1Model($input: ArchiwindV1ModelInput!) {
-  createArchiwindV1Model(input: $input) {
+mutation createModelV1($input: ModelInputV1!) {
+  createModelV1(input: $input) {
     id
     name
     building { strategy uploadUrl }

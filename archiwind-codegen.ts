@@ -2,13 +2,13 @@ import type { CodegenConfig } from '@graphql-codegen/cli';
 
 const config: CodegenConfig = {
   overwrite: true,
-  schema: "https://api.nablaflow.io/schema.graphql",
+  schema: "https://api.nablaflow.io/archiwind/schema.graphql",
   documents: [
-    "src/nablaflow/queries/*.graphql",
-    "src/nablaflow/mutations/*.graphql",
+    "src/nablaflow/archiwind/queries/*.graphql",
+    "src/nablaflow/archiwind/mutations/*.graphql",
   ],
   generates: {
-    "src/nablaflow/api.ts": {
+    "src/nablaflow/archiwind/api.ts": {
       plugins: [
         "typescript",
         "typescript-operations",
@@ -18,7 +18,7 @@ const config: CodegenConfig = {
         immutableTypes: true
       },
     },
-    "./graphql.schema.json": {
+    "./archiwind-graphql.schema.json": {
       plugins: ["introspection"]
     }
   }

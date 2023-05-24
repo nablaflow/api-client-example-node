@@ -1,8 +1,9 @@
-query findArchiwindV1SimulationById ($id: ID!, $token: String, $password: String) {
-  archiwindV1Simulation(id: $id, token: $token, password: $password) {
+query findSimulationV1ById ($id: ID!, $token: String, $password: String) {
+  simulationV1(id: $id, token: $token, password: $password) {
     id
     name
     status
+    browserUrl
     sharingStatus {
       public
       token

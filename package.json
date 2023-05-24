@@ -19,6 +19,6 @@
     "esbuild": "^0.17.17"
   },
   "scripts": {
-    "codegen": "graphql-codegen --config codegen.ts"
+    "codegen": "graphql-codegen --config archiwind-codegen.ts"
   }
 }

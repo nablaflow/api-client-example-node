@@ -3,10 +3,10 @@ const esbuild = require('esbuild');
 esbuild
   .build({
     entryPoints: [
-      'examples/get_archiwind_v1_simulation.ts',
-      'examples/submit_archiwind_v1_simulation.ts',
+      'examples/archiwind/get_simulation_v1.ts',
+      'examples/archiwind/submit_simulation_v1.ts',
     ],
-    outdir: 'dist',
+    outdir: 'dist/archiwind',
     format: 'cjs',
     bundle: true,
     platform: 'node',
